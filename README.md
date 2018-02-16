@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/abdelrahmanahmed/Todo_TDD?branch=master)](https://travis-ci.org/abdelrahmanahmed/Todo_TDD)
+[![Build Status](https://travis-ci.org/abdelrahmanahmed/Todo_TDD.svg?branch=master)](https://travis-ci.org/abdelrahmanahmed/Todo_TDD)
 
 
 
