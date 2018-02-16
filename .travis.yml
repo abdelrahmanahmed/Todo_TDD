@@ -2,11 +2,21 @@ language: php
 
 php:
   - '7.1'
-  - hhvm
+
+services:
+    - mysql
 
 before_script:
+  - mkdir bootstrap/cache
+  - mkdir storage
+  - mkdir storage/app
+  - mkdir storage/framework
+  - mkdir storage/framework/sessions
+  - mkdir storage/framework/cache
+  - mkdir storage/framework/views
+  - chmod 777 -R storage
   - cp .env.travis .env
-  - mysql -e 'create database homestead;'
+  - mysql -e 'create database todo_tdd;'
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
   - php artisan migrate
