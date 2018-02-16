@@ -7,7 +7,6 @@ services:
     - mysql
 
 before_script:
-  - mkdir bootstrap/cache
   - mkdir storage
   - mkdir storage/app
   - mkdir storage/framework
