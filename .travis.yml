@@ -1,17 +1,18 @@
-os:
-  - linux
-
 language: php
 
 php:
   - '7.1'
+  - nightly
 
 before_script:
 
   - composer self-update
   - composer install --no-interaction
 
+sudo: false
 
+script:
+  - vendor/bin/phpunit
 
 
 
