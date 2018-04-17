@@ -20,5 +20,8 @@ before_script:
 script:
   - vendor/bin/phpunit
 
+  after_script: ./codeclimate.sh
+
+
 
 
